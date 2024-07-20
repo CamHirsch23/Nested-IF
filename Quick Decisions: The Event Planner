@@ -1,0 +1,20 @@
+# Task 1 
+# Question 1 
+attendees = int(input("Enter number of attendees: "))
+venue = "large hall" if attendees > 100 else "conference room"
+
+if attendees > 100:
+    additional_items = "audio system and projector"
+else:
+    additional_items = "audio system"
+
+catering_choice = input("Do you want vegetarian food? (yes/no): ")
+
+if catering_choice == "yes":
+    catering_recommendation = "Veggie Delight Caterers"
+else:
+    catering_recommendation = "Gourmet Meals Caterers"
+
+print("Venue: " + venue)
+print("Additional items recommended: " + additional_items)
+print("Catering recommendation: " + catering_recommendation)
